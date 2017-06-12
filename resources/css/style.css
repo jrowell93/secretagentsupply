@@ -1,0 +1,47 @@
+/*******GENERAL STYLING***********************/
+html{
+  font-size: 18px;
+}
+body{
+  margin:0;
+  background-color: black;
+  text-align: center;
+  color:white;
+  font-family: Helvetica;
+}
+#sitecontainer{
+  width: 690px;
+  border: 5px solid blue;
+  margin:auto;
+}
+/*************HEADER STYLING*****************/
+.sitecontainer header{
+  border: 1px solid red;
+  height:2rem;
+}
+header h1{
+  font-size: 1rem;
+}
+/************NAVIGATION STYLING**************/
+.navigation{
+  background-color: firebrick;
+  display:flex;
+}
+/***********CONTENT AREA STYLING*************/
+.contentcontainer {
+  background-color: white;
+}
+.image{
+  height:9rem;
+  width: auto;
+}
+.item{
+  height: 9rem;
+  width: auto;
+  padding: 2rem;
+  border: 2px solid black;
+}
+/*************FOOTER STYLING*****************/
+footer{
+  background-color: black;
+}

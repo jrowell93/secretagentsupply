@@ -1,10 +1,11 @@
 <DOCTYPE! html>
 <html>
 <head> <link href="./resources/css/reset.css" type="text/css" rel="resetcss">
+  <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
   <title> Secret Agent Supply Inc</title>
 </head>
 <body>
-  <div class="sitecontainer">
+  <div id="sitecontainer">
 <header>
   <img src="./resources/images/logo.png" alt="logo"/>
   <h1>Secret Agent Supply Inc.</h1>
@@ -24,32 +25,34 @@
     <li>Contact</li>
   </ul>
 </nav>
-<div class="pen">
-  <img src="./resources/images/pen.png"/>
-  <p>Exploding Pen</p>
-<div>
+<div class="contentcontainer"> <!--start white portion-->
+    <div class="item">
+        <img class="image" src="./resources/images/pen.png"/>
+          <p>Exploding Pen</p>
+    </div>
 
-  <div class="watch">
-    <img src="./resources/images/watch.png"/>
+  <div class="item">
+    <img class="image" src="./resources/images/watch.png"/>
     <p>Cellular Watch</p>
-  <div>
+  </div>
 
-    <div class="glasses">
-      <img src="./resources/images/glasses.png"/>
+    <div class="item">
+      <img class="image" src="./resources/images/glasses.png"/>
       <p>Thermal Glasses</p>
-    <div>
+    </div>
 
   <div class="location">
     <p>Location</p>
-  <div>
+  </div>
     <p>-47.346436, 84.32354</p>
 
   <div class="hours">
     <p>Hours</p>
-  <div>
+  </div>
     <p>0800-1800</p>
+</div><!--end white area-->
 
-  <footer>
+<footer>
     <p>Copyright Secret Agent Supply Inc</p>
   </footer>
 
