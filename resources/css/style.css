@@ -1,47 +1,249 @@
-/*******GENERAL STYLING***********************/
-html{
+html {
   font-size: 18px;
 }
-body{
-  margin:0;
-  background-color: black;
-  text-align: center;
-  color:white;
+
+body {
   font-family: Helvetica;
 }
-#sitecontainer{
-  width: 690px;
-  border: 5px solid blue;
-  margin:auto;
+
+body,
+li a {
+  color: white;
 }
-/*************HEADER STYLING*****************/
-.sitecontainer header{
-  border: 1px solid red;
-  height:2rem;
+
+.full-width {
+  width: 100%;
 }
-header h1{
+
+.site-width {
+  width: 960px;
+  margin: 0 auto;
+}
+
+h2 {
   font-size: 1rem;
 }
-/************NAVIGATION STYLING**************/
-.navigation{
-  background-color: firebrick;
-  display:flex;
+
+h1 {
+  font-size: 2rem;
 }
-/***********CONTENT AREA STYLING*************/
-.contentcontainer {
-  background-color: white;
+
+h1,
+h2 {
+  text-transform: uppercase;
 }
-.image{
-  height:9rem;
-  width: auto;
+
+.logo-banner,
+.feature-container,
+ul,
+.item,
+.item-height,
+.store,
+.information,
+footer {
+  display: flex;
 }
-.item{
-  height: 9rem;
-  width: auto;
-  padding: 2rem;
-  border: 2px solid black;
+
+.logo-banner,
+.item,
+.item-height,
+footer {
+  align-items: center;
 }
-/*************FOOTER STYLING*****************/
-footer{
+
+ul,
+.store,
+.information {
+  justify-content: space-between;
+}
+
+header .full-width,
+.item h2,
+.information h2,
+footer {
   background-color: black;
 }
+
+nav.full-width,
+.store {
+  margin-bottom: 3rem;
+}
+
+/********** Header **********/
+.logo-banner {
+  height: 1.5rem;
+  padding: .66rem 0;
+}
+
+.logo-banner img {
+  margin: 0 1rem 0 .5rem;
+  height: 100%;
+  width: auto;
+}
+
+.feature-container {
+  background-image: url(../images/main-image.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 24rem;
+}
+
+.feature-item {
+  background-color: black;
+  padding: 2rem 3rem;
+  margin-top: 9rem;
+  width: 20rem;
+}
+
+.feature-item h2 {
+  margin-bottom: .25rem;
+}
+
+nav.full-width {
+  background-color: firebrick;
+  margin-bottom: 3rem;
+}
+
+ul {
+  padding: .75rem 0;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.small-screen {
+  display: none;
+}
+
+/********** Store **********/
+.item {
+  border: solid 4px black;
+  width: 30%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.item-height {
+  height: 9rem;
+  padding: 2rem 0;
+}
+
+.item img {
+  max-width: 9rem;
+}
+
+.item h2 {
+  padding: .5rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+/********** Info **********/
+.information {
+  margin-bottom: 4rem;
+}
+
+.location,
+.hours {
+  width: 35%;
+}
+
+.information h2 {
+  padding: 1rem 0 1rem 2rem;
+}
+
+.information p {
+  color: black;
+  padding-top: .25rem;
+}
+
+/********** Footer **********/
+footer {
+  height: 5rem;
+}
+
+/********** Less than 1024 px **********/
+@media only screen and (max-width: 1024px) {
+
+  .site-width {
+    width: 100%;
+  }
+
+  /********** Nav **********/
+
+  ul {
+    justify-content: center;
+  }
+  .site-width li,
+  .store .item:nth-child(3) {
+    display: none;
+  }
+  li.small-screen {
+    display: inline;
+  }
+
+  /********** Store **********/
+
+  .store {
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 47%;
+  }
+
+}
+
+/********** Less than 480 px **********/
+@media only screen and (max-width: 480px) {
+  .item,
+  .location,
+  .hours {
+    width: 90%;
+  }
+
+  .store,
+  .information {
+    justify-content: center;
+  }
+  /********** Header **********/
+
+  .feature-container {
+    height: 15rem;
+  }
+  .feature-item {
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+  .feature-item h2 {
+    font-size: .77rem;
+  }
+  .feature-item h1 {
+    font-size: 1rem;
+  }
+
+  /********** Store **********/
+
+  .store .item:nth-child(2) {
+    display: none;
+  }
+
+  /********** info **********/
+  .information {
+    flex-wrap: wrap;
+  }
+  .location {
+    margin-bottom: .5rem;
+  }
+
+  /********** Footer **********/
+  footer h2 {
+    text-align: center;
+  }
